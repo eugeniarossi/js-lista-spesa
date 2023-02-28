@@ -55,4 +55,3 @@ do {
     y++;
 // Definisco la condizione del ciclo
 } while (y < shoppingList3.length);
-
