@@ -11,7 +11,6 @@ const addButton = document.getElementById('add-button');
 
 // Definisco una variabile = 0
 let i = 0;
-
 // Definisco il ciclo while
 while (i < shoppingList.length) {
     // Creo un elemento li 
@@ -22,17 +21,6 @@ while (i < shoppingList.length) {
     ul.append(li);
     // Incremento i
     i++;
-}
-
-// Definisco una lista di tutti gli li
-let liList = document.querySelectorAll('li');
-// console.log(liList);
-
-// Assegno agli li l'evento onclick
-for (let i = 0; i < liList.length; i++) {
-    liList[i].addEventListener('click', function() {
-        liList[i].classList.toggle('line-through');
-    })
 }
 
 // Aggiungo un evento onclick al button add
@@ -53,3 +41,13 @@ addButton.addEventListener('click', function() {
     // Azzero il value dell'input text
     textInput.value = '';
 });
+
+// Definisco una lista di tutti gli li
+let liList = document.querySelectorAll('li');
+// console.log(liList);
+// Assegno agli li l'evento onclick
+for (let i = 0; i < liList.length; i++) {
+    liList[i].addEventListener('click', function() {
+        liList[i].classList.toggle('line-through');
+    })
+}
